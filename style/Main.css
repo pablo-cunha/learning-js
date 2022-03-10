@@ -74,9 +74,22 @@ body {
 }
 
 /* Articles Box Component */
-.articles-container {
-}
 
 .articles-container p {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+/* Footer Component */
+.footer-container {
+  padding-top: 95px;
+  margin-bottom: 40px;
+}
+
+.footer-container .hyper-text {
+  padding-left: 35px;
+}
+
+.footer-container .hyper-text:hover {
+  color: var(--standard-yellow);
+  font-size: 18px;
 }
