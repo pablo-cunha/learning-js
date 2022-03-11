@@ -74,15 +74,28 @@ body {
 }
 
 /* Articles Box Component */
+.articles-container {
+  padding-bottom: 10px;
+}
 
-.articles-container p {
-  font-size: 18px;
+.article-title {
+  margin-bottom: 0;
+}
+
+.article-date {
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #B2BEB5;
+}
+
+.article-description {
+  margin-top: 0;
 }
 
 /* Footer Component */
 .footer-container {
   padding-top: 95px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .footer-container .hyper-text {

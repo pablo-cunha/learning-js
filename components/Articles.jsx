@@ -1,41 +1,23 @@
 import react from "react";
 
-function Articles() {
+function Articles({ posts }) {
     return (
-        <section className="articles-container">
-            <h2>Artigos e Publicações</h2>
-            <article>
+        <section>
+            <h2>Publicações</h2>
+            {console.log(posts)}
+            {posts.map((post) => (
+            <article key={post.metadata.title}  className="articles-container">
                 <a href="/">
-                    <h2 className="article-title hyper-text">Artigo 1</h2>
+                    <h2 className="article-title hyper-text">
+                        {post.metadata.title}
+                    </h2>
                 </a>
-                <p>
-                    Descrição do artigo.
+                    <p className="article-date">{post.metadata.date}</p>
+                <p className="article-description">
+                    {post.metadata.description}
                 </p>
             </article>
-            <article>
-                <a href="/">
-                    <h2 className="article-title hyper-text">Artigo 1</h2>
-                </a>
-                <p>
-                    Descrição do artigo.
-                </p>
-            </article>
-            <article>
-                <a href="/">
-                    <h2 className="article-title hyper-text">Artigo 1</h2>
-                </a>
-                <p>
-                    Descrição do artigo.
-                </p>
-            </article>
-            <article>
-                <a href="/">
-                    <h2 className="article-title hyper-text">Artigo 1</h2>
-                </a>
-                <p>
-                    Descrição do artigo.
-                </p>
-            </article>
+            ))}
         </section>
     )
 }
