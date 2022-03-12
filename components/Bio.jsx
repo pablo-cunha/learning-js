@@ -9,7 +9,7 @@ function Bio () {
             alt="dev-photo"/>
             <p> Blog pessoal por <strong className="hyper-text">Pablo Cunha</strong>
             <br/>
-            Sempre aprendendo e tentando ensinar !
+            Sempre aprendendo e tentando ensinar!
             </p>
             </div>
         </div>

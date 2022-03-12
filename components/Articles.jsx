@@ -4,10 +4,9 @@ function Articles({ posts }) {
     return (
         <section>
             <h2>Publicações</h2>
-            {console.log(posts)}
             {posts.map((post) => (
             <article key={post.metadata.title}  className="articles-container">
-                <a href="/">
+                <a href={post.metadata.route}>
                     <h2 className="article-title hyper-text">
                         {post.metadata.title}
                     </h2>

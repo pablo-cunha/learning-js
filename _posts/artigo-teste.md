@@ -2,6 +2,7 @@
 title: 'Primeiro artigo para teste'
 date: '10 de Março, 2022'
 description: 'Resumo do primeiro post'
+route: 'artigo-teste'
 ---
 
 Primeiro post
