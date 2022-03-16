@@ -5,7 +5,7 @@ import { getAllPosts } from "../scripts/blog/getAllPosts"
 function ArtigoTeste({ posts }) {
   return (
     <div>
-        <Post posts= {posts}/>
+        <Post index="0" posts={posts}/>
     </div>
   )
 }

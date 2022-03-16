@@ -2,15 +2,15 @@ import Post from "../components/Post"
 import React from 'react'
 import { getAllPosts } from "../scripts/blog/getAllPosts"
 
-function ArtigoTeste({ posts }) {
+function SegundoArtigo({ posts }) {
   return (
     <div>
-        <Post posts= {posts}/>
+        <Post index="1" posts={posts}/>
     </div>
   )
 }
 
-export default ArtigoTeste
+export default SegundoArtigo
 
 export async function getStaticProps() {
   const posts = getAllPosts()
